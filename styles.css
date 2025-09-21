@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f39c12;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.affirmation {
+    font-style: italic;
+    color: #2980b9;
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.icon-item {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header {
+    text-align: center;
+    background-color: #f2f4f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.game-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+}
+
+.game-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.game-card h2 {
+    color: #3498db;
+    margin: 10px 0;
+}
+
+.game-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.back-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #e67e22;
+}
+
+#game-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#game-content {
+    margin: 20px 0;
+}
+
+.image-box {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.crop-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    border: 2px dashed #3498db;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crop-box textarea {
+    width: 90%;
+    height: 80%;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 1em;
+    resize: none;
+}
+
+.option-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.option-grid img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid #f0f8ff;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.option-grid img:hover {
+    border-color: #1abc9c;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+body:hover {
+    background-color: #e8f4fd;
+}
